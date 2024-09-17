@@ -3,5 +3,14 @@
 <p>email:{{userData.email}} </p>
 <p>role:{{userData.role}}</p>
 
-<h2>Jogos</h2>
-<p>{{games.sonic[1]}} ${{games.price[1]}}</p>
+
+<h2>Games</h2>
+<ol>
+    <li>{{games.sonic[0]}} R${{games.priceSonic[0]}} <b>plataforms</b>: {{games.plataform[0]}},{{games.plataform[1]}}</li>
+    <li>{{games.sonic[1]}} R${{games.priceSonic[1]}} <b>plataforms</b>: {{games.plataform[0]}},{{games.plataform[1]}}</li>
+</ol>
+<ol>
+    <li>{{games.superMario[0]}} R${{games.priceSuperMario}} <b>plataforms</b>: {{games.plataform[5]}}</li>
+    <li>{{games.superMario[1]}} R${{games.priceSuperMario}} <b>plataforms</b>: {{games.plataform[5]}}</li>
+    <li>{{games.superMario[2]}} R${{games.priceSuperMario}} <b>plataforms</b>: {{games.plataform[5]}}</li>
+</ol>

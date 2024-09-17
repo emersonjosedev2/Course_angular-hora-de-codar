@@ -13,7 +13,9 @@ export class ParentDataComponent {
 
 @Input() games!:{
   sonic: [string, string]
-  price: [number, number]
+  superMario:[string, string, string]
+  priceSonic: [number, number]
+  priceSuperMario: [number],
   plataform: [string, string, string, string, string, string]
 }
 }

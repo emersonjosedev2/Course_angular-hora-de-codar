@@ -1,0 +1,7 @@
+<div *ngIf="canShow"> esta sendo exibito por que foi permitido </div>
+<div *ngIf="name === 'Emerson'; else userf">o nome é {{name}}</div>
+
+
+<ng-template #userf>
+    <div> usuario incorreto</div>
+</ng-template>
