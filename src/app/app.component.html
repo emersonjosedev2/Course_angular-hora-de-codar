@@ -5,7 +5,9 @@
 <div [ngClass]="class"><app-parent-data [name]='userName' [userData]="userData" [games]="games"></app-parent-data></div>
 <div [ngClass]="class"><app-directives></app-directives></div>
 <div [ngClass]="class"><app-if-render></app-if-render></div>
-<div [ngClass]="class"><app-events></app-events></div>
+<div [ngClass]="class"><app-events [colors]="colors" ></app-events></div>
+<div [ngClass]="class"><app-emitter></app-emitter></div>
+
 
 
 

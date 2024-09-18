@@ -34,8 +34,10 @@ export class AppComponent {
     ] as [string, string, string, string, string, string],
 
 
-  
+ 
   };
+  colors = ['red','black', 'yellow', 'green','blue','orange'] as [string,string,string,string,string,string]
+
   class = 'class'
   
 }

@@ -1,5 +1,7 @@
 
-
+<button (click)="viewMessage()">{{exibir}}</button>
 
 <div *ngIf="message"> exibindo </div>
-<button (click)="viewMessage()">{{exibir}}</button>
+
+<div [ngClass]="colors[counter]">cores</div>
+<button (click)="ButtonColor()" >change backgound color</button>
