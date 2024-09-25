@@ -1,3 +1,16 @@
-<div *ngFor="let animals of animal">
-    {{animals.name}}, {{animals.t}}, {{animals.food}}
-</div>
+<div *ngFor="let animal of animal">
+    {{ animal.name }}, {{ animal.t }}, {{ animal.food }}
+  </div>
+  
+  <div>
+    <li *ngFor="let animal of animal">
+      {{ animal.name }}, {{ animal.t }}, {{ animal.food }}
+      <button (click)="showAge(animal)">Mostrar idade</button>
+    </li>
+  
+    <h3>{{animalDetails | uppercase}}</h3>
+  </div>
+  
+
+
+  
