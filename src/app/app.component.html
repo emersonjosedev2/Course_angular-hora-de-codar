@@ -1,16 +1,17 @@
-<div [ngClass]="class">
-  <a href="#">clique aqui!</a>
-</div>
-<div [ngClass]="class"><app-first-component></app-first-component></div>
-<div [ngClass]="class"><app-parent-data [name]='userName' [userData]="userData" [games]="games"></app-parent-data></div>
-<div [ngClass]="class"><app-directives></app-directives></div>
-<div [ngClass]="class"><app-if-render></app-if-render></div>
-<div [ngClass]="class"><app-events [colors]="colors" ></app-events></div>
-<div [ngClass]="class"><app-emitter></app-emitter></div>
-<div [ngClass]="class"><app-list-render></app-list-render></div>
+<header>
+  <nav>
+    <a routerLink="/list">lista</a>
 
+ 
+    <a routerLink="">home</a>
 
+   
+    <a routerLink="/events">events </a>
+  </nav>
+</header>
+<div [ngClass]="class"><router-outlet></router-outlet></div>
 
+<footer>footer</footer>
 
 
 

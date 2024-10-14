@@ -1,6 +1,7 @@
 export interface Animal{
+    id: number,
     name: string,
-    t: string,
-    food: string,
-    avarageAge: number
+    type: string,
+    
+    age: number
 }

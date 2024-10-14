@@ -1,11 +1,12 @@
-<div *ngFor="let animal of animal">
-    {{ animal.name }}, {{ animal.t }}, {{ animal.food }}
+<div *ngFor="let animal of animal1">
+    {{ animal.name }}, {{ animal.t }}, {{ animal.avarageAge }}
   </div>
   
   <div>
-    <li *ngFor="let animal of animal">
-      {{ animal.name }}, {{ animal.t }}, {{ animal.food }}
+    <li *ngFor="let animal of animals">
+      {{ animal.name }}, {{ animal.type }}, {{ animal.age }}
       <button (click)="showAge(animal)">Mostrar idade</button>
+      <button (click)="remove(animal)">Excluir</button>
     </li>
   
     <h3>{{animalDetails | uppercase}}</h3>
